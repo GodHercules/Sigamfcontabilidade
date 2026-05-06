@@ -1,0 +1,12 @@
+**/node_modules/
+**/.next/
+**/dist/
+**/*.log
+**/.DS_Store
+**/Thumbs.db
+**/.env
+**/.env.*
+
+# Optional local tooling
+.vscode/
+
