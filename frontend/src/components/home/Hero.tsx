@@ -1,14 +1,15 @@
-﻿import Image from 'next/image';
+import Image from 'next/image';
 import { MessageCircle, ShieldCheck, Timer, TrendingUp, Users } from 'lucide-react';
 
 import { features, whatsappUrl } from '../../data/home-content';
 import { mascotHero } from './assets';
+import { SectionLink } from './SectionLink';
 
 const featureIcons = [ShieldCheck, Timer, TrendingUp, Users];
 
 export function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="inicio">
       <div className="container hero-grid">
         <div className="hero-copy">
           <p className="hero-kicker">Contabilidade em Salvador</p>
@@ -24,9 +25,9 @@ export function Hero() {
               <MessageCircle size={18} />
               <span>Falar com especialista</span>
             </a>
-            <a className="btn-secondary" href="#servicos">
+            <SectionLink className="btn-secondary" sectionId="servicos">
               Nossos serviços
-            </a>
+            </SectionLink>
           </div>
 
           <div className="feature-grid" aria-label="Diferenciais">
@@ -49,9 +50,9 @@ export function Hero() {
           <Image
             src={mascotHero}
             alt="Mister Freire, mascote da MF Contabilidade"
-            width={420}
-            height={395}
-            sizes="(max-width: 1024px) 360px, 420px"
+            width={620}
+            height={610}
+            sizes="(max-width: 680px) 70vw, (max-width: 1024px) 420px, (max-width: 1180px) 540px, 620px"
             priority
           />
           <div className="hero-note">
@@ -63,6 +64,5 @@ export function Hero() {
     </section>
   );
 }
-
 
 

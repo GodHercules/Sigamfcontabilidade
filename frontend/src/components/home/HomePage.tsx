@@ -1,4 +1,4 @@
-﻿import { About } from './About';
+import { About } from './About';
 import { BlogHighlights } from './BlogHighlights';
 import { Cta } from './Cta';
 import { Footer } from './Footer';
@@ -10,7 +10,7 @@ import { TopBar } from './TopBar';
 
 export function HomePage() {
   return (
-    <main id="inicio" className="site-root">
+    <main className="site-root">
       <a className="skip-link" href="#conteudo-principal">
         Pular para o conteúdo principal
       </a>
@@ -28,6 +28,4 @@ export function HomePage() {
     </main>
   );
 }
-
-
 

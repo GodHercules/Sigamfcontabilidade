@@ -1,14 +1,24 @@
-﻿import Image from 'next/image';
+'use client';
+
+import { useRef } from 'react';
+import Image from 'next/image';
 import { LockKeyhole, Menu } from 'lucide-react';
 
 import { navItems } from '../../data/home-content';
 import { logoHeader } from './assets';
+import { SectionLink } from './SectionLink';
 
 export function Header() {
+  const mobileNavRef = useRef<HTMLDetailsElement>(null);
+
+  const closeMobileMenu = () => {
+    mobileNavRef.current?.removeAttribute('open');
+  };
+
   return (
     <header className="site-header">
       <div className="container nav-shell">
-        <a href="#inicio" className="brand" aria-label="MF Contabilidade - início">
+        <SectionLink sectionId="inicio" className="brand" aria-label="MF Contabilidade - início">
           <Image
             src={logoHeader}
             alt="MF Contabilidade"
@@ -18,41 +28,42 @@ export function Header() {
             sizes="178px"
             priority
           />
-        </a>
+        </SectionLink>
 
         <nav className="nav-links" aria-label="Navegação principal">
           {navItems.map((item, index) => (
-            <a href={item.href} key={item.label} className={index === 0 ? 'is-active' : undefined}>
+            <SectionLink
+              sectionId={item.sectionId}
+              key={item.label}
+              className={index === 0 ? 'is-active' : undefined}
+            >
               {item.label}
-            </a>
+            </SectionLink>
           ))}
         </nav>
 
-        <a className="client-link" href="#contato">
+        <SectionLink sectionId="contato" className="client-link">
           <LockKeyhole size={16} />
           <span>Área do Cliente</span>
-        </a>
+        </SectionLink>
 
-        <details className="mobile-nav">
+        <details className="mobile-nav" ref={mobileNavRef}>
           <summary aria-label="Abrir menu">
             <Menu size={22} />
           </summary>
           <div className="mobile-nav-panel">
             {navItems.map((item) => (
-              <a href={item.href} key={item.label}>
+              <SectionLink sectionId={item.sectionId} key={item.label} onNavigate={closeMobileMenu}>
                 {item.label}
-              </a>
+              </SectionLink>
             ))}
-            <a href="#contato">
+            <SectionLink sectionId="contato" onNavigate={closeMobileMenu}>
               <LockKeyhole size={16} />
               <span>Área do Cliente</span>
-            </a>
+            </SectionLink>
           </div>
         </details>
       </div>
     </header>
   );
 }
-
-
-

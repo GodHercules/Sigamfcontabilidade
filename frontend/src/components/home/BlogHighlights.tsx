@@ -1,6 +1,7 @@
-﻿import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 import { blogCards } from '../../data/home-content';
+import { SectionLink } from './SectionLink';
 
 export function BlogHighlights() {
   return (
@@ -11,10 +12,10 @@ export function BlogHighlights() {
             <p className="section-kicker">Conteúdo estratégico</p>
             <h2>Insights para decisões mais inteligentes</h2>
           </div>
-          <a href="#contato" className="text-link">
+          <SectionLink sectionId="contato" className="text-link">
             Receber novidades
             <ArrowUpRight size={16} />
-          </a>
+          </SectionLink>
         </div>
 
         <div className="blog-grid">
@@ -30,6 +31,4 @@ export function BlogHighlights() {
     </section>
   );
 }
-
-
 

@@ -1,4 +1,4 @@
-﻿import Image from 'next/image';
+import Image from 'next/image';
 import { MessageCircle } from 'lucide-react';
 
 import { whatsappLabel, whatsappUrl } from '../../data/home-content';
@@ -9,13 +9,14 @@ export function Cta() {
     <section className="cta section-reveal" aria-label="Chamada para contato">
       <div className="container cta-shell">
         <div className="cta-mascot-wrap">
+          <div className="cta-triangle" aria-hidden="true" />
           <Image
             src={mascotFooter}
             alt="Mister Freire"
-            width={300}
-            height={390}
+            width={340}
+            height={420}
             className="cta-mascot"
-            sizes="(max-width: 680px) 190px, 300px"
+            sizes="(max-width: 680px) 130px, (max-width: 1024px) 190px, 340px"
           />
         </div>
 
@@ -32,6 +33,4 @@ export function Cta() {
     </section>
   );
 }
-
-
 

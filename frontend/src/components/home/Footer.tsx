@@ -1,4 +1,4 @@
-﻿import Image from 'next/image';
+import Image from 'next/image';
 import { Clock, Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
@@ -17,6 +17,7 @@ import {
   whatsappUrl,
 } from '../../data/home-content';
 import { logoFooter } from './assets';
+import { SectionLink } from './SectionLink';
 
 export function Footer() {
   return (
@@ -47,18 +48,18 @@ export function Footer() {
         <div>
           <h4>Navegação</h4>
           {navItems.map((item) => (
-            <a href={item.href} key={item.label}>
+            <SectionLink sectionId={item.sectionId} key={item.label}>
               {item.label}
-            </a>
+            </SectionLink>
           ))}
         </div>
 
         <div>
           <h4>Serviços</h4>
           {services.map((service) => (
-            <a href="#servicos" key={service.title}>
+            <SectionLink sectionId="servicos" key={service.title}>
               {service.title}
-            </a>
+            </SectionLink>
           ))}
         </div>
 

@@ -1,6 +1,7 @@
-﻿import { BarChart3, Building2, FileText, HandCoins, Handshake } from 'lucide-react';
+import { BarChart3, Building2, FileText, HandCoins, Handshake } from 'lucide-react';
 
 import { services } from '../../data/home-content';
+import { SectionLink } from './SectionLink';
 
 const serviceIcons = [Building2, HandCoins, FileText, Handshake, BarChart3];
 
@@ -10,7 +11,7 @@ export function Services() {
       <div className="container">
         <div className="section-head">
           <p className="section-kicker">Como podemos ajudar</p>
-          <h2>Nossos Serviços</h2>
+          <h2>Nossos serviços</h2>
         </div>
 
         <div className="service-grid">
@@ -24,7 +25,7 @@ export function Services() {
                 </div>
                 <h3>{service.title}</h3>
                 <p>{service.text}</p>
-                <a href="#contato">Saiba mais</a>
+                <SectionLink sectionId="contato">Saiba mais</SectionLink>
               </article>
             );
           })}
@@ -33,6 +34,5 @@ export function Services() {
     </section>
   );
 }
-
 
 
