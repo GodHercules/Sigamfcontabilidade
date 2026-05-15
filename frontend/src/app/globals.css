@@ -101,12 +101,12 @@ summary:focus-visible {
 }
 
 .topbar-inner {
-  min-height: 40px;
+  min-height: 46px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px 18px;
-  padding: 8px 0;
+  padding: 10px 0;
 }
 
 .topbar-contact,
@@ -149,10 +149,11 @@ summary:focus-visible {
   border-bottom: 1px solid rgba(13, 30, 57, 0.08);
   background: rgba(248, 251, 255, 0.86);
   backdrop-filter: blur(14px);
+  padding-block: 6px;
 }
 
 .nav-shell {
-  min-height: 88px;
+  min-height: 98px;
   display: flex;
   align-items: center;
   gap: 22px;
@@ -294,7 +295,8 @@ summary:focus-visible {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  padding: 52px 0 44px;
+  min-height: clamp(760px, 90vh, 940px);
+  padding: 68px 0 96px;
 }
 
 .hero::before {
@@ -313,6 +315,7 @@ summary:focus-visible {
   grid-template-columns: minmax(0, 1.06fr) minmax(0, 0.94fr);
   align-items: center;
   gap: 40px;
+  min-height: clamp(620px, 74vh, 760px);
 }
 
 .hero-copy {
@@ -869,7 +872,9 @@ summary:focus-visible {
   align-items: end;
   align-self: flex-end;
   overflow: visible;
-  margin-bottom: -34px;
+  margin-top: -42px;
+  margin-bottom: 0;
+  z-index: 2;
 }
 
 .cta-mascot {
@@ -1078,7 +1083,9 @@ summary:focus-visible {
   }
 
   .hero {
+    min-height: auto;
     padding-top: 42px;
+    padding-bottom: 64px;
   }
 
   .hero-art {
@@ -1126,7 +1133,7 @@ summary:focus-visible {
   }
 
   .nav-shell {
-    min-height: 78px;
+    min-height: 84px;
   }
 
   .brand-logo {
@@ -1157,7 +1164,8 @@ summary:focus-visible {
   .cta-mascot-wrap {
     width: 178px;
     height: 230px;
-    margin-bottom: -22px;
+    margin-top: -30px;
+    margin-bottom: 0;
   }
 
   .cta-mascot {
