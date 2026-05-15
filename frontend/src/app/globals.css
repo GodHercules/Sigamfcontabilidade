@@ -862,7 +862,7 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   gap: 24px;
-  padding: 8px 0;
+  padding: 8px 0 14px;
 }
 
 .cta-mascot-wrap {
@@ -870,7 +870,7 @@ summary:focus-visible {
   height: clamp(250px, 24vw, 330px);
   display: grid;
   align-items: end;
-  align-self: flex-end;
+  align-self: flex-start;
   overflow: visible;
   margin-top: -42px;
   margin-bottom: 0;
@@ -1158,12 +1158,13 @@ summary:focus-visible {
     display: grid;
     grid-template-columns: 150px minmax(0, 1fr);
     gap: 16px;
-    padding: 8px 0;
+    padding: 8px 0 14px;
   }
 
   .cta-mascot-wrap {
     width: 178px;
     height: 230px;
+    align-self: flex-start;
     margin-top: -30px;
     margin-bottom: 0;
   }
