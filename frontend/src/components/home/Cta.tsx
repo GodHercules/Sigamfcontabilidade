@@ -9,7 +9,6 @@ export function Cta() {
     <section className="cta section-reveal" aria-label="Chamada para contato">
       <div className="container cta-shell">
         <div className="cta-mascot-wrap">
-          <div className="cta-triangle" aria-hidden="true" />
           <Image
             src={mascotFooter}
             alt="Mister Freire"

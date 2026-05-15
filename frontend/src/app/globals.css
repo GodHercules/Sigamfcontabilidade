@@ -1293,28 +1293,31 @@ summary:focus-visible {
 }
 
 .hero-grid {
-  grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.04fr);
+  grid-template-columns: minmax(0, 0.94fr) minmax(0, 1.06fr);
   gap: 44px;
 }
 
 .hero-art {
   min-height: clamp(560px, 48vw, 680px);
+  justify-content: flex-start;
 }
 
 .hero-plate {
-  right: -74px;
-  width: min(640px, 116%);
-  height: 560px;
+  left: -52px;
+  right: auto;
+  width: min(600px, 108%);
+  height: 530px;
   clip-path: polygon(24% 2%, 100% 100%, 0 100%);
 }
 
 .hero-art img {
-  width: min(610px, 116%);
+  width: min(640px, 118%);
+  margin-left: 6px;
 }
 
 .hero-note {
-  right: 22px;
-  bottom: 70px;
+  right: 56px;
+  bottom: 74px;
   max-width: 196px;
 }
 
@@ -1329,24 +1332,9 @@ summary:focus-visible {
   height: clamp(244px, 23vw, 328px);
 }
 
-.cta-triangle {
-  position: absolute;
-  left: 6%;
-  right: 2%;
-  bottom: 0;
-  height: 88%;
-  border-radius: 24px;
-  background:
-    linear-gradient(155deg, rgba(8, 102, 233, 0.88), rgba(2, 45, 108, 0.94)),
-    radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.24), transparent 62%);
-  clip-path: polygon(30% 0, 100% 100%, 0 100%);
-  box-shadow: 0 22px 38px rgba(1, 19, 49, 0.32);
-  z-index: 1;
-}
-
 .cta-mascot {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   width: 136%;
   margin-left: -8%;
 }
@@ -1361,13 +1349,15 @@ summary:focus-visible {
   }
 
   .hero-plate {
-    right: -28px;
-    width: min(560px, 108%);
-    height: clamp(400px, 44vw, 500px);
+    left: -24px;
+    right: auto;
+    width: min(540px, 104%);
+    height: clamp(390px, 42vw, 470px);
   }
 
   .hero-art img {
-    width: min(540px, 104%);
+    width: min(560px, 108%);
+    margin-left: 0;
   }
 }
 
@@ -1406,6 +1396,7 @@ summary:focus-visible {
   .hero-art {
     min-height: clamp(280px, 48vw, 360px);
     align-items: flex-end;
+    justify-content: center;
   }
 
   .hero-plate {
@@ -1433,12 +1424,6 @@ summary:focus-visible {
   .cta-mascot-wrap {
     width: 176px;
     height: 198px;
-  }
-
-  .cta-triangle {
-    left: 2px;
-    right: 0;
-    border-radius: 18px;
   }
 
   .cta-mascot {
@@ -1574,10 +1559,6 @@ summary:focus-visible {
   .cta-mascot-wrap {
     width: 124px;
     height: 146px;
-  }
-
-  .cta-triangle {
-    height: 82%;
   }
 
   .cta-mascot {
