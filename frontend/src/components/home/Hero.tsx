@@ -13,7 +13,7 @@ export function Hero() {
         <div className="hero-copy">
           <p className="hero-kicker">Contabilidade em Salvador</p>
           <h1 className="hero-title">
-            SoluÃ§Ãµes integradas em <span>gestÃ£o empresarial</span>
+            Soluções integradas em <span>gestão empresarial</span>
           </h1>
           <p className="hero-lead">
             Contabilidade completa, consultoria especializada e atendimento humanizado para o
@@ -25,7 +25,7 @@ export function Hero() {
               <span>Falar com especialista</span>
             </a>
             <a className="btn-secondary" href="#servicos">
-              Nossos serviÃ§os
+              Nossos serviços
             </a>
           </div>
 
@@ -56,12 +56,13 @@ export function Hero() {
           />
           <div className="hero-note">
             <strong>Mister Freire</strong>
-            <p>Nosso especialista estÃ¡ pronto para te ajudar.</p>
+            <p>Nosso especialista está pronto para te ajudar.</p>
           </div>
         </div>
       </div>
     </section>
   );
 }
+
 
 

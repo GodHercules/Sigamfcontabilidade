@@ -12,16 +12,16 @@ export function Cta() {
           <Image
             src={mascotFooter}
             alt="Mister Freire"
-            width={220}
-            height={290}
+            width={300}
+            height={390}
             className="cta-mascot"
-            sizes="(max-width: 680px) 170px, 220px"
+            sizes="(max-width: 680px) 190px, 300px"
           />
         </div>
 
         <div className="cta-copy">
           <h2>Fale com um especialista agora mesmo</h2>
-          <p>Estamos prontos para entender seu negÃ³cio e oferecer a melhor soluÃ§Ã£o.</p>
+          <p>Estamos prontos para entender seu negócio e oferecer a melhor solução.</p>
         </div>
 
         <a className="cta-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer">
@@ -32,5 +32,6 @@ export function Cta() {
     </section>
   );
 }
+
 
 

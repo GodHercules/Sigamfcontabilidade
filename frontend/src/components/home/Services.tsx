@@ -10,7 +10,7 @@ export function Services() {
       <div className="container">
         <div className="section-head">
           <p className="section-kicker">Como podemos ajudar</p>
-          <h2>Nossos ServiÃ§os</h2>
+          <h2>Nossos Serviços</h2>
         </div>
 
         <div className="service-grid">
@@ -33,5 +33,6 @@ export function Services() {
     </section>
   );
 }
+
 
 

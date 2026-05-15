@@ -855,25 +855,31 @@ summary:focus-visible {
 }
 
 .cta-shell {
-  min-height: 168px;
+  min-height: 196px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 24px;
-  padding: 10px 0;
+  padding: 20px 0 0;
 }
 
 .cta-mascot-wrap {
-  width: clamp(176px, 18vw, 232px);
-  height: clamp(220px, 22vw, 292px);
+  width: clamp(228px, 22vw, 312px);
+  height: clamp(286px, 29vw, 392px);
   display: grid;
   align-items: end;
+  align-self: flex-end;
+  overflow: visible;
 }
 
 .cta-mascot {
-  width: 100%;
-  height: auto;
+  width: 112%;
+  max-width: none;
+  height: 100%;
+  display: block;
   object-fit: contain;
-  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.34));
+  object-position: center bottom;
+  margin-left: -8%;
+  filter: drop-shadow(0 24px 34px rgba(0, 0, 0, 0.36));
 }
 
 .cta-copy h2 {
@@ -987,6 +993,24 @@ summary:focus-visible {
 .site-footer a:hover {
   color: #fff;
   transform: translateX(2px);
+}
+
+.footer-social a,
+.footer-social a:hover {
+  display: inline-grid;
+  place-items: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer-social a svg {
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
+.footer-social a:hover {
+  transform: translateY(-2px);
 }
 
 .footer-copy {
@@ -1119,9 +1143,19 @@ summary:focus-visible {
 
   .cta-shell {
     display: grid;
-    grid-template-columns: 120px minmax(0, 1fr);
+    grid-template-columns: 150px minmax(0, 1fr);
     gap: 16px;
-    padding: 18px 0;
+    padding: 16px 0 0;
+  }
+
+  .cta-mascot-wrap {
+    width: 190px;
+    height: 250px;
+  }
+
+  .cta-mascot {
+    width: 108%;
+    margin-left: -4%;
   }
 
   .cta-whatsapp {
@@ -1220,4 +1254,3 @@ summary:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
-

@@ -45,7 +45,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h4>NavegaÃ§Ã£o</h4>
+          <h4>Navegação</h4>
           {navItems.map((item) => (
             <a href={item.href} key={item.label}>
               {item.label}
@@ -54,7 +54,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h4>ServiÃ§os</h4>
+          <h4>Serviços</h4>
           {services.map((service) => (
             <a href="#servicos" key={service.title}>
               {service.title}
@@ -94,11 +94,12 @@ export function Footer() {
       </div>
 
       <div className="container footer-copy">
-        <span>Â© 2026 MF Contabilidade. Todos os direitos reservados.</span>
+        <span>© 2026 MF Contabilidade. Todos os direitos reservados.</span>
         <span>Desenvolvido para MF Contabilidade</span>
       </div>
     </footer>
   );
 }
+
 
 

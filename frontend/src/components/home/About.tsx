@@ -10,7 +10,7 @@ export function About() {
         <div className="about-media">
           <Image
             src={officePhoto}
-            alt="EscritÃ³rio da MF Contabilidade"
+            alt="Escritório da MF Contabilidade"
             width={760}
             height={452}
             quality={80}
@@ -20,17 +20,17 @@ export function About() {
 
         <div className="about-copy">
           <p className="section-kicker section-kicker-dark">Por que escolher a MF?</p>
-          <h2>Mais que contabilidade, somos parceiros do seu negÃ³cio.</h2>
+          <h2>Mais que contabilidade, somos parceiros do seu negócio.</h2>
           <p>
-            HÃ¡ mais de 10 anos no mercado, a MF Contabilidade e GestÃ£o Empresarial oferece
-            soluÃ§Ãµes completas e personalizadas para empresas de diversos segmentos. Nosso
-            compromisso Ã© com excelÃªncia, Ã©tica e resultados.
+            Há mais de 10 anos no mercado, a MF Contabilidade e Gestão Empresarial oferece
+            soluções completas e personalizadas para empresas de diversos segmentos. Nosso
+            compromisso é com excelência, ética e resultados.
           </p>
           <div className="stats-grid">
             <article>
               <Users />
               <strong>+10</strong>
-              <small>Anos de experiÃªncia</small>
+              <small>Anos de experiência</small>
             </article>
             <article>
               <Users />
@@ -48,5 +48,6 @@ export function About() {
     </section>
   );
 }
+
 
 

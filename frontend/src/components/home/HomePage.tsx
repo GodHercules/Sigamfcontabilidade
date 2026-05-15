@@ -12,7 +12,7 @@ export function HomePage() {
   return (
     <main id="inicio" className="site-root">
       <a className="skip-link" href="#conteudo-principal">
-        Pular para o conteÃºdo principal
+        Pular para o conteúdo principal
       </a>
       <TopBar />
       <Header />
@@ -28,5 +28,6 @@ export function HomePage() {
     </main>
   );
 }
+
 
 

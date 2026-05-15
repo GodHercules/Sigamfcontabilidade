@@ -8,7 +8,7 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="container nav-shell">
-        <a href="#inicio" className="brand" aria-label="MF Contabilidade - inÃ­cio">
+        <a href="#inicio" className="brand" aria-label="MF Contabilidade - início">
           <Image
             src={logoHeader}
             alt="MF Contabilidade"
@@ -20,7 +20,7 @@ export function Header() {
           />
         </a>
 
-        <nav className="nav-links" aria-label="NavegaÃ§Ã£o principal">
+        <nav className="nav-links" aria-label="Navegação principal">
           {navItems.map((item, index) => (
             <a href={item.href} key={item.label} className={index === 0 ? 'is-active' : undefined}>
               {item.label}
@@ -30,7 +30,7 @@ export function Header() {
 
         <a className="client-link" href="#contato">
           <LockKeyhole size={16} />
-          <span>Ãrea do Cliente</span>
+          <span>Área do Cliente</span>
         </a>
 
         <details className="mobile-nav">
@@ -45,7 +45,7 @@ export function Header() {
             ))}
             <a href="#contato">
               <LockKeyhole size={16} />
-              <span>Ãrea do Cliente</span>
+              <span>Área do Cliente</span>
             </a>
           </div>
         </details>
@@ -53,5 +53,6 @@ export function Header() {
     </header>
   );
 }
+
 
 

@@ -8,8 +8,8 @@ export function BlogHighlights() {
       <div className="container">
         <div className="section-head section-head-inline">
           <div>
-            <p className="section-kicker">ConteÃºdo estratÃ©gico</p>
-            <h2>Insights para decisÃµes mais inteligentes</h2>
+            <p className="section-kicker">Conteúdo estratégico</p>
+            <h2>Insights para decisões mais inteligentes</h2>
           </div>
           <a href="#contato" className="text-link">
             Receber novidades
@@ -30,5 +30,6 @@ export function BlogHighlights() {
     </section>
   );
 }
+
 
 

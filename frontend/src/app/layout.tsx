@@ -16,11 +16,11 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: 'MF Contabilidade | SoluÃ§Ãµes Integradas em GestÃ£o Empresarial',
+  title: 'MF Contabilidade | Soluções Integradas em Gestão Empresarial',
   description:
-    'A MF Contabilidade oferece soluÃ§Ãµes contÃ¡beis, fiscais e estratÃ©gicas para empresas que buscam crescimento com seguranÃ§a.',
+    'A MF Contabilidade oferece soluções contábeis, fiscais e estratégicas para empresas que buscam crescimento com segurança.',
   openGraph: {
-    title: 'MF Contabilidade | SoluÃ§Ãµes Integradas em GestÃ£o Empresarial',
+    title: 'MF Contabilidade | Soluções Integradas em Gestão Empresarial',
     description:
       'Contabilidade completa, consultoria especializada e atendimento humanizado para o crescimento seguro da sua empresa.',
     type: 'website',
@@ -35,5 +35,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
 
 
