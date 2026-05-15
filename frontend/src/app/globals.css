@@ -871,7 +871,7 @@ summary:focus-visible {
   left: 0;
   bottom: 0;
   width: clamp(214px, 20vw, 282px);
-  height: clamp(250px, 24vw, 330px);
+  height: clamp(220px, 22vw, 290px);
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -1166,7 +1166,7 @@ summary:focus-visible {
 
   .cta-mascot-wrap {
     width: 168px;
-    height: 216px;
+    height: 190px;
   }
 
   .cta-mascot {
@@ -1220,7 +1220,7 @@ summary:focus-visible {
 
   .cta-mascot-wrap {
     width: 132px;
-    height: 176px;
+    height: 154px;
   }
 
   .cta-mascot {
