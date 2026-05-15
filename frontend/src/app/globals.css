@@ -1608,7 +1608,14 @@ summary:focus-visible {
   }
 
   .hero-grid {
+    display: flex;
+    flex-direction: column;
     gap: 16px;
+  }
+
+  .hero-copy {
+    display: flex;
+    flex-direction: column;
   }
 
   .hero-title {
@@ -1642,11 +1649,13 @@ summary:focus-visible {
   }
 
   .hero-art {
+    order: 4;
+    width: 100%;
     min-height: 214px;
     display: grid;
     align-items: end;
     justify-items: center;
-    margin-top: 2px;
+    margin-top: 10px;
     overflow: hidden;
   }
 
@@ -1667,6 +1676,7 @@ summary:focus-visible {
     position: static;
     margin-top: 8px;
     max-width: min(92vw, 238px);
+    margin-inline: auto;
     width: fit-content;
     border-radius: 10px;
     padding: 9px 10px;
@@ -1682,6 +1692,7 @@ summary:focus-visible {
   }
 
   .feature-grid {
+    order: 3;
     grid-template-columns: 1fr;
     gap: 8px;
   }
