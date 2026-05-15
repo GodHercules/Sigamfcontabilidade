@@ -858,33 +858,36 @@ summary:focus-visible {
 }
 
 .cta-shell {
+  position: relative;
   min-height: 168px;
   display: flex;
   align-items: center;
   gap: 24px;
-  padding: 8px 0 14px;
+  padding: 8px 0 14px clamp(214px, 20vw, 282px);
 }
 
 .cta-mascot-wrap {
-  width: clamp(220px, 20vw, 286px);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: clamp(214px, 20vw, 282px);
   height: clamp(250px, 24vw, 330px);
-  display: grid;
-  align-items: end;
-  align-self: flex-start;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   overflow: visible;
-  margin-top: -42px;
-  margin-bottom: 0;
   z-index: 2;
+  pointer-events: none;
 }
 
 .cta-mascot {
-  width: 145%;
+  width: 128%;
   max-width: none;
   height: 100%;
   display: block;
-  object-fit: cover;
-  object-position: 38% 100%;
-  margin-left: -36%;
+  object-fit: contain;
+  object-position: center bottom;
+  margin-left: -14%;
   filter: drop-shadow(0 24px 34px rgba(0, 0, 0, 0.34));
 }
 
@@ -1156,26 +1159,22 @@ summary:focus-visible {
 
   .cta-shell {
     display: grid;
-    grid-template-columns: 150px minmax(0, 1fr);
-    gap: 16px;
-    padding: 8px 0 14px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    padding: 8px 0 14px 160px;
   }
 
   .cta-mascot-wrap {
-    width: 178px;
-    height: 230px;
-    align-self: flex-start;
-    margin-top: -30px;
-    margin-bottom: 0;
+    width: 168px;
+    height: 216px;
   }
 
   .cta-mascot {
-    width: 128%;
-    margin-left: -22%;
+    width: 122%;
+    margin-left: -10%;
   }
 
   .cta-whatsapp {
-    grid-column: 1 / -1;
     margin-left: 0;
     width: 100%;
   }
@@ -1213,6 +1212,20 @@ summary:focus-visible {
     right: auto;
     bottom: auto;
     margin: 0 0 10px auto;
+  }
+
+  .cta-shell {
+    padding-left: 126px;
+  }
+
+  .cta-mascot-wrap {
+    width: 132px;
+    height: 176px;
+  }
+
+  .cta-mascot {
+    width: 118%;
+    margin-left: -8%;
   }
 
   .feature-grid,
