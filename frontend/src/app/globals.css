@@ -1477,12 +1477,24 @@ summary:focus-visible {
   }
 
   .nav-shell {
+    position: relative;
     min-height: 74px;
     gap: 14px;
+    justify-content: center;
+  }
+
+  .brand {
+    margin-inline: auto;
   }
 
   .brand-logo {
-    width: 142px;
+    width: 124px;
+  }
+
+  .mobile-nav {
+    position: absolute;
+    right: 0;
+    margin-left: 0;
   }
 
   .hero {
@@ -1600,6 +1612,10 @@ summary:focus-visible {
 @media (max-width: 520px) {
   .container {
     width: calc(100% - 24px);
+  }
+
+  .brand-logo {
+    width: 112px;
   }
 
   .hero {
