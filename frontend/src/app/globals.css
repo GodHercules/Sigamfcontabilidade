@@ -1652,32 +1652,39 @@ summary:focus-visible {
     order: 4;
     width: 100%;
     min-height: 214px;
-    display: grid;
-    align-items: end;
-    justify-items: center;
+    display: block;
     margin-top: 10px;
     overflow: hidden;
   }
 
   .hero-plate {
+    left: 50%;
+    right: auto;
+    top: auto;
+    bottom: 0;
     width: min(84vw, 286px);
     height: min(56vw, 198px);
-    right: 50%;
-    top: 12px;
-    transform: translateX(50%);
+    transform: translateX(-50%);
   }
 
   .hero-art img {
+    position: absolute;
+    left: 50%;
+    right: auto;
+    bottom: 0;
     width: min(69vw, 242px);
+    transform: translateX(-50%);
     margin-left: 0;
   }
 
   .hero-note {
-    position: static;
-    margin-top: 8px;
-    max-width: min(92vw, 238px);
-    margin-inline: auto;
-    width: fit-content;
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    z-index: 3;
+    max-width: min(84vw, 214px);
+    width: min(84vw, 214px);
+    transform: translateX(-50%);
     border-radius: 10px;
     padding: 9px 10px;
   }
@@ -1762,17 +1769,17 @@ summary:focus-visible {
   }
 
   .hero-plate {
-    top: 8px;
-    width: min(85vw, 274px);
-    height: min(57vw, 188px);
+    width: min(84vw, 264px);
+    height: min(56vw, 178px);
   }
 
   .hero-art img {
-    width: min(70vw, 232px);
+    width: min(69vw, 224px);
   }
 
   .hero-note {
-    max-width: min(90vw, 220px);
+    max-width: min(84vw, 202px);
+    width: min(84vw, 202px);
     padding: 8px;
   }
 
