@@ -847,7 +847,7 @@ summary:focus-visible {
 
 .cta {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   background:
     radial-gradient(760px 300px at 20% 0%, rgba(255, 255, 255, 0.18), transparent 70%),
     linear-gradient(120deg, #00317a, #0054c1 62%, #00317a);
@@ -855,31 +855,32 @@ summary:focus-visible {
 }
 
 .cta-shell {
-  min-height: 196px;
+  min-height: 168px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 24px;
-  padding: 20px 0 0;
+  padding: 8px 0;
 }
 
 .cta-mascot-wrap {
-  width: clamp(228px, 22vw, 312px);
-  height: clamp(286px, 29vw, 392px);
+  width: clamp(220px, 20vw, 286px);
+  height: clamp(250px, 24vw, 330px);
   display: grid;
   align-items: end;
   align-self: flex-end;
   overflow: visible;
+  margin-bottom: -34px;
 }
 
 .cta-mascot {
-  width: 112%;
+  width: 145%;
   max-width: none;
   height: 100%;
   display: block;
-  object-fit: contain;
-  object-position: center bottom;
-  margin-left: -8%;
-  filter: drop-shadow(0 24px 34px rgba(0, 0, 0, 0.36));
+  object-fit: cover;
+  object-position: 38% 100%;
+  margin-left: -36%;
+  filter: drop-shadow(0 24px 34px rgba(0, 0, 0, 0.34));
 }
 
 .cta-copy h2 {
@@ -921,6 +922,11 @@ summary:focus-visible {
 
 .cta-whatsapp:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+.cta-copy,
+.cta-whatsapp {
+  align-self: center;
 }
 
 .site-footer {
@@ -1145,17 +1151,18 @@ summary:focus-visible {
     display: grid;
     grid-template-columns: 150px minmax(0, 1fr);
     gap: 16px;
-    padding: 16px 0 0;
+    padding: 8px 0;
   }
 
   .cta-mascot-wrap {
-    width: 190px;
-    height: 250px;
+    width: 178px;
+    height: 230px;
+    margin-bottom: -22px;
   }
 
   .cta-mascot {
-    width: 108%;
-    margin-left: -4%;
+    width: 128%;
+    margin-left: -22%;
   }
 
   .cta-whatsapp {
