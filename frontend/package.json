@@ -7,7 +7,10 @@
     "dev:turbo": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "images:optimize": "node ./scripts/optimize-images.mjs",
+    "test:visual": "playwright test -c playwright.visual.config.ts",
+    "test:visual:update": "playwright test -c playwright.visual.config.ts --update-snapshots"
   },
   "dependencies": {
     "@types/node": "latest",
@@ -19,5 +22,11 @@
     "react-dom": "latest",
     "react-icons": "^5.6.0",
     "typescript": "latest"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.6",
+    "sharp": "^0.34.5"
   }
 }

@@ -1,0 +1,26 @@
+{
+  "assets": [
+    {
+      "input": "public/assets/1000314053.jpg",
+      "outputName": "office-photo",
+      "maxWidth": 2400,
+      "webp": { "quality": 82, "effort": 5 },
+      "avif": { "quality": 58, "effort": 7 }
+    },
+    {
+      "input": "public/assets/mascote-hero.png",
+      "outputName": "mascote-hero",
+      "maxWidth": 1024,
+      "webp": { "quality": 84, "effort": 5 },
+      "avif": { "quality": 60, "effort": 7 }
+    },
+    {
+      "input": "public/assets/mascote-footer.png",
+      "outputName": "mascote-footer",
+      "maxWidth": 900,
+      "webp": { "quality": 84, "effort": 5 },
+      "avif": { "quality": 60, "effort": 7 }
+    }
+  ]
+}
+

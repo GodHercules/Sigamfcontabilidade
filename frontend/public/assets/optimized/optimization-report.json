@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-05-15T12:00:36.229Z",
+  "report": [
+    {
+      "source": "public/assets/1000314053.jpg",
+      "width": 3944,
+      "height": 2344,
+      "originalKb": 1226.5,
+      "webpKb": 177.5,
+      "avifKb": 104.9,
+      "webpSavingPercent": 85.5,
+      "avifSavingPercent": 91.4
+    },
+    {
+      "source": "public/assets/mascote-hero.png",
+      "width": 1024,
+      "height": 734,
+      "originalKb": 448.4,
+      "webpKb": 33.7,
+      "avifKb": 23.4,
+      "webpSavingPercent": 92.5,
+      "avifSavingPercent": 94.8
+    },
+    {
+      "source": "public/assets/mascote-footer.png",
+      "width": 638,
+      "height": 677,
+      "originalKb": 353.4,
+      "webpKb": 33.4,
+      "avifKb": 19.1,
+      "webpSavingPercent": 90.5,
+      "avifSavingPercent": 94.6
+    }
+  ]
+}

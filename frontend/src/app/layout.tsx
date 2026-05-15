@@ -1,50 +1,39 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
+import { Manrope, Sora } from 'next/font/google';
+
 import './globals.css';
-import Script from 'next/script';
+
+const sora = Sora({
+  subsets: ['latin'],
+  variable: '--font-display',
+  weight: ['400', '500', '600', '700', '800'],
+});
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  variable: '--font-body',
+  weight: ['400', '500', '600', '700', '800'],
+});
 
 export const metadata: Metadata = {
-  title: 'MF Contabilidade | Soluções integradas em gestão empresarial',
-  description: 'Landing page institucional da MF Contabilidade.',
+  title: 'MF Contabilidade | SoluÃ§Ãµes Integradas em GestÃ£o Empresarial',
+  description:
+    'A MF Contabilidade oferece soluÃ§Ãµes contÃ¡beis, fiscais e estratÃ©gicas para empresas que buscam crescimento com seguranÃ§a.',
+  openGraph: {
+    title: 'MF Contabilidade | SoluÃ§Ãµes Integradas em GestÃ£o Empresarial',
+    description:
+      'Contabilidade completa, consultoria especializada e atendimento humanizado para o crescimento seguro da sua empresa.',
+    type: 'website',
+    locale: 'pt_BR',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body>
-        {children}
-        <Script id="scroll-effects" strategy="afterInteractive">
-          {`
-(() => {
-  const root = document.documentElement;
-  const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduceMotion) return;
-
-  let latestY = 0;
-  let ticking = false;
-  const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
-
-  const apply = () => {
-    ticking = false;
-    const y = clamp(latestY, 0, 220);
-    root.style.setProperty('--scrollY', String(y));
-    if (latestY > 8) root.setAttribute('data-scrolled', '1');
-    else root.removeAttribute('data-scrolled');
-  };
-
-  const onScroll = () => {
-    latestY = window.scrollY || 0;
-    if (!ticking) {
-      ticking = true;
-      requestAnimationFrame(apply);
-    }
-  };
-
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-})();
-          `}
-        </Script>
-      </body>
+      <body className={`${sora.variable} ${manrope.variable}`}>{children}</body>
     </html>
   );
 }
+
+
